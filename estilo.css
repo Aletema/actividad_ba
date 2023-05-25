@@ -50,17 +50,17 @@ h3 {
 .FlexContainer :hover {
     border-radius: 10px;
     border: 10px solid;
+  transition-duration: 0.5s;
 }
 
 .contacto {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 80vh;
-    overflow: auto;
-    flex-direction: row;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 30px;
+grid-row-gap: 30px;
+   
+   
 }
 
 .red_contacto {
@@ -73,6 +73,7 @@ h3 {
 /*Inicio Header*/
 header {
     background: black;
+   
 }
 
 nav {
@@ -163,3 +164,9 @@ fieldset {
 }
 
 /*Fin form*/
+
+/*Inicio Footer*/
+footer{
+    background-color: grey;
+    height: 250px;
+}
